@@ -26,3 +26,12 @@ func TransformStringToInt (str string) int {
     }
     return result
 }
+
+func IndexOf (slice []int, target int) int {
+    for i, num := range slice {
+        if num == target {
+            return i
+        }
+    }
+    return -1
+}
